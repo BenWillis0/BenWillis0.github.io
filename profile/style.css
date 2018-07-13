@@ -38,7 +38,8 @@ body{
 	height:var(--titlePageHeight);
 	background-image:url("images/background.jpg");
 	background-repeat:no-repeat;
-	background-size:100%;
+	background-position:center center;
+	background-size:cover;
 	position:absolute;
 	top:var(--headerHeight);
 }
@@ -77,11 +78,29 @@ body{
 	display:inline-block;
 }
 
+
 .links{
 	font-size:20px;
 	text-align:center;
 	font-weight:bold;
 	font-family:Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 800px){/*once less than 800px boxes stack verticly*/
+	.linkBoxes{
+		text-align:center;
+		width:200px;
+		left:calc(50% - 200px/2);
+		top:15%;
+	}
+	.linkBox{
+		width:100%;
+		margin-bottom:10px;
+		
+	}
+	.titleBox{
+		top:10%;
+	}
+	
 }
 
 .linkBoxes:after {
@@ -90,7 +109,7 @@ body{
   display: inline-block;
 }
 
-a{
+.linkBtn{
 	color:white;
 	text-decoration:none;
 }
@@ -146,9 +165,9 @@ a{
 
 .exampleBoxes{
 	width:66%;
-	position:absolute;
-	top:40%;
-	left:17%;
+	position:relative;
+	top:15%;
+	left:17%;/*50 - (66/2) */
 }
 
 .webBox{
@@ -166,14 +185,20 @@ a{
 	min-height:200px;
 	padding-left:15px;
 }
+@media only screen and (max-width: 800px), screen and (max-height:550px){
+	.aboutBox{top:5%;}
+	.infoBox{top:5%;}
+	.exampleBoxes{top:5%;}
+}
 
 
 .projects{
 	width:100%;
 	height:var(--projectsPageHeight);
 	background-image:url("images/background-2.jpg");
-	background-size:100%;
+	background-size:cover;
 	background-repeat:no-repeat;
+	background-position:center center;
 	position:absolute;
 	top:calc(var(--aboutMePageHeight) + var(--titlePageHeight) + var(--headerHeight));
 }
@@ -190,7 +215,11 @@ a{
 .cont h3{
 	text-align:center;
 }
-
+@media only screen and (max-height: 550px), screen and (max-width:500px){
+	.cont{
+		font-size:12px;
+	}
+}
 img{
 	width:100%;
 	max-height:50%;
@@ -202,12 +231,11 @@ img{
 	padding-left: 2%;
 }
 
-#weatherBlock{
+#twitchBlock{
 	top:10%;
 	left:5%;
 	
 }
-
 
 #lincolnBlock{
 	top:30%;
@@ -215,9 +243,10 @@ img{
 }
 
 #quoteBlock{
-	top:70%;
+	bottom:10%;
 	left:20%;
 }
+
 
 #pongBlock{
 	top:5%;

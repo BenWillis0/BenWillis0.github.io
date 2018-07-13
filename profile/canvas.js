@@ -4,6 +4,12 @@ var c = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+window.addEventListener('resize',function(){
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	init()
+});
+
 var mouse = {
 	x: undefined,
 	y: undefined
@@ -66,7 +72,7 @@ function Ball(x,y,radius,speed){
 	}
 }
 balls = [];
-function innit(){
+function init(){
 	balls = [];
 	for(var i = 0;i < 250;i++){
 		var radius = 1;
@@ -85,5 +91,5 @@ function animate(){
 	}
 }
 
-innit();
+init();
 animate();
