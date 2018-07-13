@@ -1,0 +1,230 @@
+body{
+	margin:0;
+}
+
+:root{
+	--headerHeight:40px;
+	--titlePageHeight:calc(100% - 40px);
+	--aboutMePageHeight:calc(100% - 40px);
+	--projectsPageHeight:calc(100% - 40px);
+}
+
+.theBox{
+}
+
+.header{
+	position: fixed;
+	top: 0px;
+	height:var(--headerHeight);
+	width:100%;
+	z-index: 1;
+	background-color:rgb(60,60,60);
+}
+.bn{
+	width:90px;
+	height:var(--headerHeight);
+	border:none;
+	background-color:white;
+	font-weight:bold;
+	text-align:center;
+	float:right;
+}
+.bn:focus {outline:0;}
+
+.bn:hover{cursor:pointer;}
+
+.titlePage{
+	width:100%;
+	height:var(--titlePageHeight);
+	background-image:url("images/background.jpg");
+	background-repeat:no-repeat;
+	background-size:100%;
+	position:absolute;
+	top:var(--headerHeight);
+}
+
+.titlebox{
+	width:66%;
+	min-height:50px;
+	background-color:black;
+	text-align:center;
+	margin:auto;
+	position:relative;
+	top:calc((var(--titlePageHeight)*0.2) + var(--headerHeight));
+}
+
+.title{
+	font-size:40px;
+	font-weight:bold;
+	padding:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:white;
+}
+
+.linkBoxes{
+	width:66%;
+	height:50px;
+	position:relative;
+	top:30%;
+	left:calc(50% - (66% * 0.5));
+	text-align:justify;
+}
+
+.linkBox{
+	background-color:black;
+	width:30%;
+	height:50px;
+	display:inline-block;
+}
+
+.links{
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.linkBoxes:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+a{
+	color:white;
+	text-decoration:none;
+}
+
+#about{
+	position:absolute;
+	top:-40px;
+}
+
+.aboutMePage{
+	width:100%;
+	height:var(--aboutMePageHeight);
+	background-color:black;
+	position:absolute;
+	top:calc(var(--titlePageHeight) + var(--headerHeight));
+}
+
+#canvas{
+	width:100%;
+	height:calc(var(--aboutMePageHeight) + 40px);
+	position:absolute;
+}
+
+.aboutBox , .infoBox{
+	background-color:white;
+	width:66%;
+	margin:auto;
+	text-align:center;
+	position:relative;
+}
+
+.aboutBox{
+	top:15%;
+}
+
+.aboutTitle{
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:20px;
+}
+
+.infoBox{
+	top:15%;
+	width:66%;
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:-5px;
+}
+
+.infoBox p {
+	padding:15px;
+}
+
+.exampleBoxes{
+	width:66%;
+	position:absolute;
+	top:40%;
+	left:17%;
+}
+
+.webBox{
+	position:absolute;
+	width:40%;
+	background-color:white;
+	min-height:200px;
+	padding-left:15px;
+}
+
+.codeBox{
+	float:right;
+	width:40%;
+	background-color:white;
+	min-height:200px;
+	padding-left:15px;
+}
+
+
+.projects{
+	width:100%;
+	height:var(--projectsPageHeight);
+	background-image:url("images/background-2.jpg");
+	background-size:100%;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:calc(var(--aboutMePageHeight) + var(--titlePageHeight) + var(--headerHeight));
+}
+
+.cont{
+	background-color:white;
+	color:black;
+	position:absolute;
+	width:15%;
+	padding:0px 10px 10px 10px;
+	border-radius:5px;
+}
+
+.cont h3{
+	text-align:center;
+}
+
+img{
+	width:100%;
+	max-height:50%;
+	position:relative;
+  
+}
+
+.cont p{
+	padding-left: 2%;
+}
+
+#weatherBlock{
+	top:10%;
+	left:5%;
+	
+}
+
+
+#lincolnBlock{
+	top:30%;
+	left:50%;
+}
+
+#quoteBlock{
+	top:70%;
+	left:20%;
+}
+
+#pongBlock{
+	top:5%;
+	right:5%;
+}
+
+#moreBlock{
+	bottom:5%;
+	right:5%;
+}
