@@ -3,7 +3,7 @@ body{
 }
 
 :root{
-	--headerHeight:60px;
+	--headerHeight:50px;
 	--titlePageHeight:calc(100% - 40px);
 	--aboutMePageHeight:calc(100% - 40px);
 	--projectsPageHeight:calc(100% - 40px);
