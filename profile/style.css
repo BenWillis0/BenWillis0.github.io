@@ -3,7 +3,7 @@ body{
 }
 
 :root{
-	--headerHeight:40px;
+	--headerHeight:60px;
 	--titlePageHeight:calc(100% - 40px);
 	--aboutMePageHeight:calc(100% - 40px);
 	--projectsPageHeight:calc(100% - 40px);
@@ -85,7 +85,7 @@ body{
 	font-weight:bold;
 	font-family:Arial, Helvetica, sans-serif;
 }
-@media only screen and (max-width: 800px){/*once less than 800px boxes stack verticly*/
+@media only screen and (max-width: 1000px){/*once less than 800px boxes stack verticly*/
 	.linkBoxes{
 		text-align:center;
 		width:200px;
