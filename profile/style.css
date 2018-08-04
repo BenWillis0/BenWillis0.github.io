@@ -174,7 +174,7 @@ body{
 	position:absolute;
 	width:40%;
 	background-color:white;
-	min-height:200px;
+	min-height:180px;
 	padding-left:15px;
 }
 
@@ -182,7 +182,7 @@ body{
 	float:right;
 	width:40%;
 	background-color:white;
-	min-height:200px;
+	min-height:180px;
 	padding-left:15px;
 }
 @media only screen and (max-width: 800px), screen and (max-height:550px){
