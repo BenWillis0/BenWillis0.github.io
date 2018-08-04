@@ -214,11 +214,11 @@ body{
 
 .cont h3{
 	text-align:center;
-	padding: 0;
 }
 @media only screen and (max-height: 580px), screen and (max-width:500px){
 	.cont{
 		font-size:12px;
+		padding:0px 6px 6px 6px;
 	}
 }
 img{
