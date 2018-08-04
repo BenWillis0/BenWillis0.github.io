@@ -218,7 +218,7 @@ body{
 @media only screen and (max-height: 580px), screen and (max-width:500px){
 	.cont{
 		font-size:12px;
-		padding:0px 6px 6px 6px;
+		padding:0px 4px 0px 4px;
 	}
 }
 img{
