@@ -214,6 +214,7 @@ body{
 
 .cont h3{
 	text-align:center;
+	padding: 0;
 }
 @media only screen and (max-height: 550px), screen and (max-width:500px){
 	.cont{
