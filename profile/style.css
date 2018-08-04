@@ -215,7 +215,7 @@ body{
 .cont h3{
 	text-align:center;
 }
-@media only screen or (max-height: 550px), screen or (max-width:500px){
+@media only screen and (max-height: 550px), screen and (max-width:500px){
 	.cont{
 		font-size:12px;
 	}
@@ -238,7 +238,7 @@ img{
 }
 
 #lincolnBlock{
-	top:30%;
+	bottom:10%;
 	left:50%;
 }
 
