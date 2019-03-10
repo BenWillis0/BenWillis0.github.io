@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Zombie game</title>
+	<style>
+	body{
+	margin:0px;
+	padding:0px;
+	background-repeat: repeat;
+	background-size: cover;
+	background-image: url("pics/background.jpg"); 
+	overflow: hidden;
+	}
+
+	canvas{
+		position: relative;
+		margin-top: -20px;
+		padding:0px;
+	}
+
+	
+	#end1,#end2,#end3,#end4{
+		font-size: 65px;
+		text-align: center;
+		top:30%;
+	}
+
+	#end1{
+		font-size: 80px;
+	}
+
+	
+	
+	</style>
+</head>
+<body>
+	<img src="./pics/zombie.png" alt="" id="zombieFace">
+	<img src="./pics/human.png" alt="" id="humanFace">
+	<img src="./pics/player.png" alt="" id="playerFace">
+	<img src="./pics/block.jpg" alt="" id="box">
+
+	<h1 id="end1"></h1>
+	<h1 id="end2"></h1>
+	<h1 id="end3"></h1>
+	<h1 id="end4"></h1>
+
+	<h2 id="humansKilled"></h2>
+	<h2 id="zombiesKilled"></h2>
+	<h2 id="humansToZombies"></h2>
+
+	<script src="map.js"></script>
+	<script src="box.js"></script>
+	<script src="agent.js"></script>
+	<script src="nonPlayer.js"></script>
+	<script src="zombie.js"></script>
+	<script src="human.js"></script>
+	<script src="player.js"></script>
+	<script src="gun.js"></script>
+	<canvas id="canvas"></canvas>
+	<script src="canvas.js"></script>
+</body>
+</html>
