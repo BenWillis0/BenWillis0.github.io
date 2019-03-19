@@ -157,8 +157,11 @@ function inWall(x,y){
 }
 
 function endGame(wl){
-	zombies = [], humans = [], bullets = [], boxes = [];
-	delete player;
+	zombies.map(a=>a.exists = false);
+	humans.map(a=>a.exists = false);
+	bullets.map(a=>a.exists = false);
+	boxes.map(a=>a.exists = false);
+	player.exists = false;
 	document.body.style.background = 'none';
 	if(wl === 'win'){document.getElementById('end1').textContent = "You Win!";}else{document.getElementById('end1').textContent = 'You Lose!';}
 	document.getElementById('end2').textContent = 'You killed ' + humansKilled + ' humans';
@@ -169,7 +172,9 @@ function endGame(wl){
 }
 
 function updateOffset(){
-	window.scrollTo(player.x - window.innerWidth/2,player.y - window.innerHeight/2);
+	if(player.exists){
+		window.scrollTo(player.x - window.innerWidth/2,player.y - window.innerHeight/2);
+	}
 }
 
 
@@ -239,21 +244,30 @@ function animate(){
 	}
 	
 	for(let z of zombies){
-		z.update();
+		if(z.exists){
+			z.update();
+		}
 	}
-	
-	player.update();
+	if(player.exists){
+		player.update();
+	}
 
 	for(let b of bullets){
-		b.update();
+		if(b.exists){
+			b.update();
+		}
 	}
 
 	for(let h of humans){
-		h.update();
+		if(h.exists){
+			h.update();
+		}
 	}
 
 	for(let b of boxes){
-		b.draw();
+		if(b.exists){
+			b.draw();
+		}
 	}
 
 	if(humans.length === 0 && gameOver == false){

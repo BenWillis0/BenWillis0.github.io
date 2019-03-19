@@ -6,6 +6,7 @@ class Agent{
 		this.vel = vel;
         this.colour = colour;
         this.face = face;
+		this.exists = true; 
 	}
 	draw(){
         c.beginPath();
