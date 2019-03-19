@@ -5,8 +5,8 @@ class Gun{
         this.speed = 10;
         this.vel = {x: 0, y: 0}
         this.lastPos = {};
-		this.lives = 3;
-		this.exists = true;
+	this.lives = 3;
+	this.exists = true;
     }
 	draw(){
 		c.beginPath();
